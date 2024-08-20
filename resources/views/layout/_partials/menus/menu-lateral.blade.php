@@ -126,5 +126,14 @@
         </p>
       </a>
     </li>
+
+    <li class="nav-item">
+      <a href="{{ route('senha-pdv.index') }}" class="nav-link">
+        <i class="nav-icon fa-solid fa-computer"></i>
+        <p>
+          Senha PDV
+        </p>
+      </a>
+    </li>
   </ul>
 <!-- /.sidebar-menu -->
