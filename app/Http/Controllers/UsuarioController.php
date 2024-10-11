@@ -12,6 +12,7 @@ use Illuminate\Http\Request;
 
 class UsuarioController extends Controller
 {
+    //API para armazenar anexos
     public function __construct(Anexo $anexo)
     {
         $this->anexo = $anexo;
