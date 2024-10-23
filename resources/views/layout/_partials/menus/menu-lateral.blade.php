@@ -111,12 +111,12 @@
       </a>
     </li> --}}
     
-    <li class="nav-item">
+    {{--  <li class="nav-item">
       <a href="{{ route('check-list.index') }}" class="nav-link">
         <i class="nav-icon fa-solid fa-table-list"></i>
           <p>Check-List Loja {{session()->get('filial')->codigo}}</p>
       </a>
-    </li>
+    </li>  --}}
     
     <li class="nav-item">
       <a href="{{ route('codigo_barra.index') }}" class="nav-link">
@@ -132,6 +132,15 @@
         <i class="nav-icon fa-solid fa-computer"></i>
         <p>
           Senha PDV
+        </p>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a href="{{ route('manuais.index') }}" class="nav-link">
+        <i class="nav-icon fa-solid fa-book"></i>
+        <p>
+          Manuais CPD
         </p>
       </a>
     </li>

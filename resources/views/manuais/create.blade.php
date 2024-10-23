@@ -21,7 +21,7 @@
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
-                    @include('manuais.form')
+                    @include('ponto.form')
                 </div>
             </div>
         </div>

@@ -16,6 +16,7 @@ use App\Http\Controllers\{
     FuncaoController,
     FuncionarioController,
     ItemController,
+    ManuaisController,
     PontoController,
     SalarioController
 };
@@ -157,26 +158,26 @@ Route::group(['prefix'=>'codigo_barra', 'as' =>'codigo_barra.', 'middleware'=>['
     Route::get('pdf', [CodigoBarrasController::class, 'gerarPdf'])->name('gerarPdf');
 });
 
-    // CHECK-LIST
-Route::group(['prefix'=>'check-list', 'as'=>'check-list.', 'middleware'=>['auth']], function(){
-    Route::group(['prefix'=>'fechamento', 'as'=>'fechamento.'], function(){
-        Route::get('/', [CheckListController::class, 'fechamento_index'])->name('index');
-        Route::get('/create', [CheckListController::class, 'create'])->name('create');
-        Route::post('/store', [CheckListController::class, 'store'])->name('store');
-        Route::post('/show', [CheckListController::class, 'show'])->name('show');
-        Route::get('/{check-list}/edite', [CheckListController::class, 'edit'])->name('edit');
-        Route::put('/{check-list}/update', [CheckListController::class, 'update'])->name('update');
-        Route::get('/{check-list}/destroy', [CheckListController::class, 'destroy'])->name('destroy');
-    });
+//     // CHECK-LIST
+// Route::group(['prefix'=>'check-list', 'as'=>'check-list.', 'middleware'=>['auth']], function(){
+//     Route::group(['prefix'=>'fechamento', 'as'=>'fechamento.'], function(){
+//     Route::get('/', [CheckListController::class, 'fechamento_index'])->name('index');
+//     Route::get('/create', [CheckListController::class, 'create'])->name('create');
+//     Route::post('/store', [CheckListController::class, 'store'])->name('store');
+//     Route::post('/show', [CheckListController::class, 'show'])->name('show');
+//     Route::get('/{check-list}/edite', [CheckListController::class, 'edit'])->name('edit');
+//     Route::put('/{check-list}/update', [CheckListController::class, 'update'])->name('update');
+//     Route::get('/{check-list}/destroy', [CheckListController::class, 'destroy'])->name('destroy');
+// });
 
-    Route::get('/', [CheckListController::class, 'index'])->name('index');
-    Route::get('/create', [CheckListController::class, 'create'])->name('create');
-    Route::post('/store', [CheckListController::class, 'store'])->name('store');
-    Route::post('/show', [CheckListController::class, 'show'])->name('show');
-    Route::get('/{check-list}/edite', [CheckListController::class, 'edit'])->name('edit');
-    Route::put('/{check-list}/update', [CheckListController::class, 'update'])->name('update');
-    Route::get('/{check-list}/destroy', [CheckListController::class, 'destroy'])->name('destroy');
-});
+//     Route::get('/', [CheckListController::class, 'index'])->name('index');
+//     Route::get('/create', [CheckListController::class, 'create'])->name('create');
+//     Route::post('/store', [CheckListController::class, 'store'])->name('store');
+//     Route::post('/show', [CheckListController::class, 'show'])->name('show');
+//     Route::get('/{check-list}/edite', [CheckListController::class, 'edit'])->name('edit');
+//     Route::put('/{check-list}/update', [CheckListController::class, 'update'])->name('update');
+//     Route::get('/{check-list}/destroy', [CheckListController::class, 'destroy'])->name('destroy');
+// });
 
     //ACESSO MAXIPOS
 Route::group(['prefix'=>'acesso_maxipos', 'as' =>'acesso_maxipos.', 'middleware'=>['auth']], function(){
@@ -191,6 +192,12 @@ Route::group(['prefix'=>'acesso_maxipos', 'as' =>'acesso_maxipos.', 'middleware'
 });
 
   //SENHA PDV
-  Route::group(['prefix'=>'senha-pdv', 'as' =>'senha-pdv.', 'middleware'=>['auth']], function(){
+Route::group(['prefix'=>'senha-pdv', 'as' =>'senha-pdv.', 'middleware'=>['auth']], function(){
     Route::get('/', [CalcularSenhaController::class, 'index'])->name('index');
+});
+
+
+    //MANUAIS
+Route::group(['prefix'=>'manuais', 'as' =>'manuais.', 'middleware'=>['auth']], function(){
+    Route::get('/', [ManuaisController::class, 'index'])->name('index');
 });
