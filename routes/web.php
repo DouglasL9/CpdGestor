@@ -200,4 +200,13 @@ Route::group(['prefix'=>'senha-pdv', 'as' =>'senha-pdv.', 'middleware'=>['auth']
     //MANUAIS
 Route::group(['prefix'=>'manuais', 'as' =>'manuais.', 'middleware'=>['auth']], function(){
     Route::get('/', [ManuaisController::class, 'index'])->name('index');
+    Route::get('create/', [ManuaisController::class, 'create'])->name('create');
+    Route::post('store/', [ManuaisController::class, 'store'])->name('store');
+    Route::get('edite/', [ManuaisController::class, 'edite'])->name('edite');
+    Route::put('update/', [ManuaisController::class, 'update'])->name('update');
+    Route::get('delete/', [ManuaisController::class, 'delete'])->name('delete');
+    Route::get('/pdf-ribbon', [ManuaisController::class, 'pdf_ribbon'])->name('troca-ribbon');
+    Route::get('/pdf-painel', [ManuaisController::class, 'pdf_painel'])->name('guia-painel');
+    Route::get('/pdf-controle', [ManuaisController::class, 'pdf_controle'])->name('configuracao-controle');
 });
+

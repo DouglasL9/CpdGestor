@@ -10,13 +10,13 @@
             <div class="card card-info">
                 <div class="card-header">
                     <h3 class="card-title"><i class="fa-regular fa-rectangle-list"></i> Lista de Manuais </h3>
-                    {{--  <div class="card-tools">
+                    <div class="card-tools">
                         <ul class="nav nav-pills ml-auto">
                             <li class="nav-item">
-                                <a href="{{ route('ponto.create') }}" class="btn btn-md btn-info"><i class="fas fa-plus-circle"></i> NOVO PONTO</a>
+                                <a href="{{ route('manuais.create') }}" class="btn btn-md btn-info"><i class="fas fa-plus-circle"></i> Cadastrar Novo Manual</a>
                             </li>
                         </ul>
-                    </div>  --}}
+                    </div>
                 </div>
                 <div class="card-body">
                     <div class="col-12">
@@ -27,7 +27,9 @@
                                         Configuração do Controle do Painel de Senha
                                     </div>
                                     <div class="card-body" style="text-align: center">
-                                        <i class="fas fa-file-pdf fa-lg mt-4" style="font-size: 50px"></i>
+                                        <a href="{{ route('manuais.configuracao-controle') }}" target="_blank">
+                                            <i class="fas fa-file-pdf fa-lg mt-4" style="font-size: 50px; color: #ff0000;"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -38,7 +40,9 @@
                                         Configuração da Impressora
                                     </div>
                                     <div class="card-body" style="text-align: center">
-                                        <i class="fas fa-file-pdf fa-lg mt-4" style="font-size: 50px"></i>
+                                        <a href="{{ route('manuais.guia-painel') }}" target="_blank">
+                                            <i class="fas fa-file-pdf fa-lg mt-4" style="font-size: 50px; color: #ff0000;"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -49,9 +53,9 @@
                                         Troca de Ribbon
                                     </div>
                                     <div class="card-body" style="text-align: center">
-                                        <a href"_partials/GuiaTrocaRibbon.pdf">ALT</a>
-                                        <a href="resources/views/manuais/_partials/GuiaTrocaRibbon.pdf" target="_blank"> 111 </a>
-                                        <i class="fas fa-file-pdf fa-lg mt-4" style="font-size: 50px; align-items:center"></i>
+                                        <a href="{{ route('manuais.troca-ribbon') }}" target="_blank">
+                                            <i class="fas fa-file-pdf fa-lg mt-4" style="font-size: 50px; color: #ff0000;"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

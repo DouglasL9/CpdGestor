@@ -17,6 +17,16 @@ class Anexo
         return $anexo->store('ponto/' . base64_encode($ponto_id) . '/usuario/' .base64_encode($user_id).'/comprovante', 'public');
     }
 
+    public function storeManual($manual_id = null, $anexo, $anexo_banco, )
+    {
+        //Deletando o arquivo caso já exista algum
+
+        if(Storage::disk('public')->exists($anexo_banco))
+            Storage::disk('public')->delete($anexo_banco);
+
+        return $anexo->store('manuais/' . base64_encode($manual_id), 'public');
+    }
+
     public function user_store($user_id, $anexo, $anexo_banco)
     {
         //Deletando o arquivo caso já exista algum
