@@ -9,3 +9,32 @@
 .td-10p{
     width: 10%;
 }
+  
+  .card {
+    background-color: var(--background-color);
+    box-shadow: 1px ;
+    padding: 56px 16px 16px 16px;
+    margin: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    transition: box-shadow .25s;
+  
+    .icon {
+      z-index: 2;
+      position: relative;
+      display: table;
+      padding: 8px;
+    }
+  
+    h4 {
+      z-index: 2;
+      position: relative;
+      margin: 12px 0 4px 0;
+      font-family: inherit;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 2;
+      color: var(--card-label-color);
+    }
+  }

@@ -20,7 +20,7 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <table id="table-datatable" class="table table-bordered table-striped table-hover table-responsve-md dataTable dtr-inline">
+                    <table class="table table-bordered table-hover">
                         <thead>
                             <tr>
                                 <th>ID</th>
@@ -115,7 +115,7 @@
 
     // Removendo o registro
     function remover(acesso){
-        $confirmacao = confirm('Tem certeza que deseja remover este Funcionário?');
+        $confirmacao = confirm('Tem certeza que deseja remover este Registro?');
 
         if($confirmacao){
             window.location.href = "{{url('/')}}/acesso_maxipos/"+acesso+"/destroy"

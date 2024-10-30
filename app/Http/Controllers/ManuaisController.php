@@ -18,7 +18,8 @@ class ManuaisController extends Controller
     }
 
     public function index(){
-        return view('manuais.index');
+        $rows = Manual::all();
+        return view('manuais.index', compact('rows'));
     }
 
     public function create(){
