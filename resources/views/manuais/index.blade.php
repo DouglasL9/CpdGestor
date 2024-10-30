@@ -21,9 +21,9 @@
                 </div>
                 <div class="card-body">
                     <div class="col-12">
-                        <div class="row">
+                        <div class="row row-cols-1 row-cols-lg-4 ">
                             @foreach ($rows as $row)
-                                <div class="col-3">
+                                <div class="col">
                                     <div class="card">
                                         <span class="icon">
                                             <i class="fa-regular fa-file-pdf fa-2xl" style="color: #ff0000; font-size: 60px"></i>
