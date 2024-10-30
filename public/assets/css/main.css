@@ -13,14 +13,17 @@
   .card {
     background-color: var(--background-color);
     box-shadow: 1px ;
-    padding: 56px 16px 16px 16px;
     margin: 10px;
     border-radius: 15px;
-    cursor: pointer;
     position: relative;
     transition: box-shadow .25s;
-  
+   
+    .footer {
+      padding: 0 0 8px 0;
+      cursor: pointer;
+    } 
     .icon {
+      margin: 56px 16px 16px 16px;
       z-index: 2;
       position: relative;
       display: table;
@@ -30,7 +33,7 @@
     h4 {
       z-index: 2;
       position: relative;
-      margin: 12px 0 4px 0;
+      margin: 12px 0 4px 10px;
       font-family: inherit;
       font-weight: 600;
       font-size: 14px;

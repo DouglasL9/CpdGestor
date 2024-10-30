@@ -35,7 +35,7 @@
                                         </p>
                                         
                                         <hr>
-                                        <div class="fooer" style="text-align: center">
+                                        <div class="footer" style="text-align: center">
                                             <div class="dropdown w-100">
                                                 <span class="w-100" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="false">
                                                     Ações <i class="fa-solid fa-gear"></i>
