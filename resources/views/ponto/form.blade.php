@@ -63,20 +63,7 @@
 
             <div class="col-md-5">
                 <div class="form-group">
-                    <label for="entrada_almoco">Entrada Almoço</label>
-                    <input class="form-control" id="entrada_almoco" type="time" name="entrada_almoco" value="{{isset($ponto) ? $ponto->entrada_almoco : old('entrada_almoco')}}">
-
-                    @error('entrada_almoco')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
-                </div>
-            </div>
-
-            <div class="col-md-5">
-                <div class="form-group">
-                    <label for="comprovante1">Comprovante N° 1</label>
+                    <label for="comprovante1">Comprovante Entrada</label>
                     <span class="badge badge-info">.JPG .PNG .JPEG</span>
                     <input class="form-control" type="file" name="comprovante1" accept="image/png, image/jpeg, image/jpg">
                     @error('comprovante1')
@@ -95,7 +82,20 @@
 
             <div class="col-md-5">
                 <div class="form-group">
-                    <label for="comprovante2">Comprovante N° 2</label>
+                    <label for="entrada_almoco">Entrada Almoço</label>
+                    <input class="form-control" id="entrada_almoco" type="time" name="entrada_almoco" value="{{isset($ponto) ? $ponto->entrada_almoco : old('entrada_almoco')}}">
+
+                    @error('entrada_almoco')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label for="comprovante2">Comprovante Entrada Almoço</label>
                     <span class="badge badge-info">.JPG .PNG .JPEG</span>
                     <input class="form-control" type="file" name="comprovante2" accept="image/png, image/jpeg, image/jpg">
                     @error('comprovante2')
@@ -116,7 +116,7 @@
         <div class="row">    
             <div class="col-md-5">
                 <div class="form-group">
-                    <label for="saida_almoco">Saída Almoço</label>
+                    <label for="saida_almoco">Volta Almoço</label>
                     <input class="form-control" id="saida_almoco" type="time" name="saida_almoco" value="{{isset($ponto) ? $ponto->saida_almoco : old('saida_almoco')}}">
 
                     @error('saida_almoco')
@@ -126,22 +126,10 @@
                     @enderror
                 </div>
             </div>
-            <div class="col-md-5">
-                <div class="form-group">
-                    <label for="saida">Saída</label>
-                    <input class="form-control" id="saida" type="time" name="saida" value="{{isset($ponto) ? $ponto->saida : old('saida')}}">
-
-                    @error('saida')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
-                </div>
-            </div>
 
             <div class="col-md-5">
                 <div class="form-group">
-                    <label for="comprovante3">Comprovante N° 3</label>
+                    <label for="comprovante3">Comprovante Volta Almoço</label>
                     <span class="badge badge-info">.JPG .PNG .JPEG</span>
                     <input class="form-control" type="file" name="comprovante3" accept="image/png, image/jpeg, image/jpg">
                     @error('comprovante3')
@@ -160,7 +148,20 @@
 
             <div class="col-md-5">
                 <div class="form-group">
-                    <label for="comprovante4">Comprovante N° 4</label>
+                    <label for="saida">Saída</label>
+                    <input class="form-control" id="saida" type="time" name="saida" value="{{isset($ponto) ? $ponto->saida : old('saida')}}">
+
+                    @error('saida')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label for="comprovante4">Comprovante Saída</label>
                     <span class="badge badge-info">.JPG .PNG .JPEG</span>
                     <input class="form-control" type="file" name="comprovante4" accept="image/png, image/jpeg, image/jpg">
                     @error('comprovante4')

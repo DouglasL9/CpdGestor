@@ -1,8 +1,8 @@
 @extends('layout.app')
 
-@section('title', 'Itens')
+@section('title', 'Equipamentos')
 
-@section('page-title', 'Itens')
+@section('page-title', 'Equipamentos')
 
 @section('content')
 
@@ -10,11 +10,11 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-header">
-                <h3 class="card-title">Selecione um item</h3>
+                <h3 class="card-title">Selecione um Equipamento</h3>
                 <div class="card-tools">
                     <ul class="nav nav-pills ml-auto">
                         <li class="nav-item">
-                            <a href="javascript:void(0)" id="novo-item" class="nav-link active"><i class="fas fa-plus-circle"></i> NOVO ITEM</a>
+                            <a href="javascript:void(0)" id="novo-item" class="nav-link active"><i class="fas fa-plus-circle"></i> NOVO EQUIPAMENTO</a>
                             {{-- <a href="{{route('modulos.create')}}" class="nav-link active">NOVO ITEM</a> --}}
                         </li>
                     </ul>
@@ -28,7 +28,7 @@
                         <tr>
                             <th style="width: 10px">ID</th>
                             <th>Nome</th>
-                            <th>Ativo</th>
+                            <th>Funcionando</th>
                             <th>AÇÕES</th>
                         </tr>
                     </thead>
@@ -59,7 +59,7 @@
                             </tr>
                         @empty
                         <tr>
-                            <td colspan="8"><span class="text-danger">Nenhum registro encontrado</span></td>
+                            <td colspan="4"><span class="text-danger text-center">Nenhum registro encontrado</span></td>
                         </tr>
                        @endforelse
                     </tbody>

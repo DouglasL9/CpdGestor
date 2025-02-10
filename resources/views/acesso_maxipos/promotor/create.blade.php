@@ -1,8 +1,8 @@
 @extends('layout.app')
 
-@section('title', 'Pontos - Novo')
+@section('title', 'Acessos Promotor - Cadastro')
 
-@section('page-title', 'Pontos')
+@section('page-title', 'Acessos Promotor - Cadastro')
 
 @section('content')
 
@@ -10,7 +10,7 @@
         <div class="col-md-12">
             <div class="card card-info">
                 <div class="card-header">
-                    <h3 class="card-title"><i class="fas fa-pencil-alt"></i> Cadastro de Ponto</h3>
+                    <h3 class="card-title"><i class="fas fa-pencil-alt"></i> Cadastro</h3>
                     <div class="card-tools">
                         <ul class="nav nav-pills ml-auto">
                             {{-- <li class="nav-item">
@@ -21,7 +21,7 @@
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
-                    @include('ponto.form')
+                    @include('acesso_maxipos.promotor._form')
                 </div>
             </div>
         </div>

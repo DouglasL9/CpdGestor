@@ -2,7 +2,7 @@
 <div class="modal-dialog modal-lg">
     <div class="modal-content">
     <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Novo Item</h5>
+        <h5 class="modal-title" id="staticBackdropLabel">Novo Equipamento</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
         <span aria-hidden="true">&times;</span>
         </button>
@@ -14,8 +14,51 @@
                 {{--  <div class="col-md-12">  --}}
                 <div class="col-6">
                     <div class="form-group">
-                        <label for="nome">Nome *</label>
-                        <input type="text" class="form-control" name="nome" value="{{isset($item) ? $item->nome : old('nome')}}" required>
+                        <label for="nome">Tipo Produto *</label>
+                        {{-- <input type="text" class="form-control" name="nome" value="{{isset($item) ? $item->nome : old('nome')}}" required> --}}
+                        <select class="form-control" name="nome" id="">
+                            <option value="">--- selecione ---</option>
+                            <optgroup label="CONSULTOR">
+                                <option value="consultor-consultor de preço">Consultor de Preço</option>
+                            </optgroup>
+                            <optgroup label="IMPRESSORA">
+                                <option value="impressora-impressora">Impressora</option>
+                            </optgroup>
+                            <optgroup label="PDV">
+                                <option value="pdv-CPU">CPU</option>
+                                <option value="pdv-Teclado">Teclado</option>
+                                <option value="pdv-Impressora Termica">Impressora Termica</option>
+                                <option value="pdv-Gaveta">Gaveta</option>
+                                <option value="pdv-Pistola">Pistola</option>
+                                <option value="pdv-Leitor">Leitor</option>
+                                <option value="pdv-Balanca">Balança</option>
+                                <option value="pdv-Maquininha">Maquininha</option>
+                            </optgroup>
+                            <optgroup label="DESKTOP">
+                                <option value="desktop-Monitor">Monitor</option>
+                                <option value="desktop-Teclado">Teclado</option>
+                                <option value="desktop-Mouse">Mouse</option>
+                                <option value="desktop-CPU">CPU</option>
+                            </optgroup>
+                            <optgroup label="RACK">
+                                <option value="rack-patch panel">Patch Panel</option>
+                                <option value="rack-switch">Switch</option>
+                                <option value="rack-backbone">Backbone</option>
+                                <option value="rack-mikrotik">Mikrotik</option>
+                                <option value="rack-servidor">Servidor</option>
+                            </optgroup>
+                            <optgroup label="PAINEL">
+                                <option value="painel-Painel Digital">Painel Digital</option>
+                                <option value="painel-Impressora Termica">Impressora Termica</option>
+                                <option value="painel-Controle">Controles</option>
+                            </optgroup>
+                            <optgroup label="BALANÇA">
+                                <option value="balança-Teclado">Teclado</option>
+                                <option value="balança-Prix 5">Balança Prix 5</option>
+                                <option value="balança-Prix 6">Balança Prix 6</option>
+                                <option value="balança-Celula">Celula</option>
+                            </optgroup>
+                        </select>
                     </div>
                 </div>
                 

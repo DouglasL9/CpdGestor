@@ -26,6 +26,7 @@ class Ponto extends Model
         'comprovante4',
         'horas_extras',
         'horas_negativas',
+        'horas_trabalhadas',
     ];
 
     /**

@@ -85,40 +85,78 @@
         <div class="card card-info">
             <div class="card-header">
                 <h3 class="card-title"><i class="far fa-eye"></i> Visualizar Ponto</h3>
-                <div class="card-tools">
-                    {{-- <ul class="nav nav-pills ml-auto">
-                        <li class="nav-item">
-                            <a href="{{route('spa.canteiros.create')}}" class="nav-link active">NOVO FUNCIONÁRIO</a>
-                        </li>
-                    </ul> --}}
-                </div>
             </div>
             <!-- /.card-header -->
             
             <div class="card-body">
+                <div class="callout callout-info">
+                    <b>Data: </b> {{ date('d / m / Y', strtotime($ponto->data)) }}<br>
+                    <b>Tipo: </b>
+                    @if ($ponto->tipo === 1)
+                        {!!'<span class="badge badge-primary" style="font-size: 15px;">DIA TRABALHADO</span>'!!}
+                    @elseif ($ponto->tipo === 2)
+                        {!!'<span class="badge badge-warning" style="font-size: 15px;">DSR</span>'!!}
+                    @else
+                        {!!'<span class="badge badge-success" style="font-size: 15px;">FOLGA</span>'!!}
+                    @endif
+                </div>
+                <div class="container">
+
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col">
                         <div class="callout callout-info">
-                            <b>Data: </b> {{ date('d / m / Y', strtotime($ponto->data)) }}<br>
-                            <b>Tipo: </b>
-                            @if ($ponto->tipo === 1)
-                                {!!'<span class="badge badge-primary" style="font-size: 15px;">DIA TRABALHADO</span>'!!}
-                            @elseif ($ponto->tipo === 2)
-                                {!!'<span class="badge badge-warning" style="font-size: 15px;">DSR</span>'!!}
-                            @else
-                                {!!'<span class="badge badge-success" style="font-size: 15px;">FOLGA</span>'!!}
-                            @endif
-                            <br>
-                            <b>Horario de Entrada: </b><br>
+                            <b>Horario de Entrada:</b><br>
                             <i class="fas fa-stopwatch fa-lg" style="color: #005eff;"></i> <span class="badge badge-primary" style="font-size: 15px;">{{$ponto->entrada}}</span><br>
-                            <b>Horario de Entrada K3: </b><br>
-                            <i class="fas fa-stopwatch fa-lg" style="color: #005eff;"></i> <span class="badge badge-primary" style="font-size: 15px;">{{ $ponto->entrada_almoco }}</span><br>
-                            <b>Horario de Saída K3: </b><br>
-                            <i class="fas fa-stopwatch fa-lg" style="color: #005eff;"></i> <span class="badge badge-primary" style="font-size: 15px;">{{ $ponto->saida_almoco }}</span><br>
-                            <b>Horario de Saída: </b><br>
-                            <i class="fas fa-stopwatch fa-lg" style="color: #005eff;"></i> <span class="badge badge-primary" style="font-size: 15px;">{{ $ponto->saida }}</span><br>
+                            @if (isset($ponto) && ($ponto->comprovante1))
+                                <br>
+                                <a href="{{url('/')}}/storage/{{$ponto->comprovante1}}" target="_blank">
+                                    <img src="{{url('/')}}/storage/{{$ponto->comprovante1}}" width="150">
+                                </a>
+                            @endif
                         </div>
                     </div>
+
+                    <div class="col">
+                        <div class="callout callout-info">
+                            <b>Horario de Entrada K3:</b><br>
+                            <i class="fas fa-stopwatch fa-lg" style="color: #005eff;"></i> <span class="badge badge-primary" style="font-size: 15px;">{{$ponto->entrada_almoco}}</span><br>
+                            @if (isset($ponto) && ($ponto->comprovante2))
+                                <br>
+                                <a href="{{url('/')}}/storage/{{$ponto->comprovante2}}" target="_blank">
+                                    <img src="{{url('/')}}/storage/{{$ponto->comprovante2}}" width="150">
+                                </a>
+                            @endif
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="callout callout-info">
+                            <b>Horario de Volta K3:</b><br>
+                            <i class="fas fa-stopwatch fa-lg" style="color: #005eff;"></i> <span class="badge badge-primary" style="font-size: 15px;">{{$ponto->saida_almoco}}</span><br>
+                            @if (isset($ponto) && ($ponto->comprovante3))
+                                <br>
+                                <a href="{{url('/')}}/storage/{{$ponto->comprovante3}}" target="_blank">
+                                    <img src="{{url('/')}}/storage/{{$ponto->comprovante3}}" width="150">
+                                </a>
+                            @endif
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="callout callout-info">
+                            <b>Horario de Saída:</b><br>
+                            <i class="fas fa-stopwatch fa-lg" style="color: #005eff;"></i> <span class="badge badge-primary" style="font-size: 15px;">{{$ponto->saida}}</span><br>
+                            @if (isset($ponto) && ($ponto->comprovante4))
+                                <br>
+                                <a href="{{url('/')}}/storage/{{$ponto->comprovante4}}" target="_blank">
+                                    <img src="{{url('/')}}/storage/{{$ponto->comprovante4}}" width="150">
+                                </a>
+                            @endif
+                        </div>
+                    </div>
+                </div>
+                </div>
+
                     
                     {{-- <div class="callout callout-info col-md-6 border p-2 text-center">
                         <img class="img-fluid" src="{{env('APP_URL_GESTOR')}}/{{str_replace('public', 'storage', $usuario->imagem)}}" width="500" alt="{{mb_strtoupper($usuario->nome)}}" title="{{mb_strtoupper($usuario->nome)}}">

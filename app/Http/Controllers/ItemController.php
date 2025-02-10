@@ -41,7 +41,7 @@ class ItemController extends Controller
     public function store(Request $request)
     {        
         try {
-
+            dd($request->all());
             $preco1 = str_replace('.','',$request->preco);
             $preco = str_replace(',','.',$preco1);
 
@@ -128,8 +128,13 @@ class ItemController extends Controller
      * @param  \App\Models\Itens  $itens
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Item $itens)
+    public function destroy(Item $item)
     {
-        dd('DESTRUIDO');
+        try {
+            $item->delete();
+            return redirect()->route('filial.item.index')->with('success', 'Equipamento excluído com sucesso.');
+        } catch (\Throwable $th) {
+            dd($th->getMessage());
+        }
     }
 }

@@ -191,6 +191,17 @@ Route::group(['prefix'=>'acesso_maxipos', 'as' =>'acesso_maxipos.', 'middleware'
     // Route::get('pdf', [AcessoMaxiposController::class, 'gerarPdf'])->name('gerarPdf');
 });
 
+Route::group(['prefix'=>'acesso_promotor', 'as' =>'acesso_promotor.', 'middleware'=>['auth']], function(){
+    Route::get('/', [AcessoMaxiposController::class, 'indexPromotor'])->name('index');
+    Route::get('/create', [AcessoMaxiposController::class, 'createPromotor'])->name('create');
+    Route::post('/store', [AcessoMaxiposController::class, 'storePromotor'])->name('store');
+    Route::post('/show', [AcessoMaxiposController::class, 'showPromotor'])->name('show');
+    Route::get('/{acesso_promotor}/edite', [AcessoMaxiposController::class, 'editPromotor'])->name('edit');
+    Route::put('/{acesso_promotor}/update', [AcessoMaxiposController::class, 'updatePromotor'])->name('update');
+    Route::get('/{acesso_promotor}/destroy', [AcessoMaxiposController::class, 'destroyPromotor'])->name('destroy');
+    // Route::get('pdf', [AcessoMaxiposController::class, 'gerarPdf'])->name('gerarPdf');
+});
+
   //SENHA PDV
 Route::group(['prefix'=>'senha-pdv', 'as' =>'senha-pdv.', 'middleware'=>['auth']], function(){
     Route::get('/', [CalcularSenhaController::class, 'index'])->name('index');

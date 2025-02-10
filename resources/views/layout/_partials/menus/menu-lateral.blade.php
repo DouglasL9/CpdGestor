@@ -49,12 +49,39 @@
     </li>
 
     <li class="nav-item">
-      <a href="{{ route('acesso_maxipos.index') }}" class="nav-link">
+      <a href="" class="nav-link">
         <i class="nav-icon fa-solid fa-globe"></i>
         <p>
-          Acessos Maxipos
+          Maestro / GMCore
+          <i class="right fas fa-angle-left"></i>
         </p>
       </a>
+      <ul class="nav nav-treeview">
+        <li class="nav-item">
+          <a href="{{ route('acesso_maxipos.index') }}" class="nav-link">
+            <i class="nav-icon fas fa-users-viewfinder fa-lg"></i>
+             <p>Colaborador</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ route('acesso_promotor.index') }}" class="nav-link">
+          <i class="nav-icon fa-solid fa-user-tag fa-lg"></i>
+            <p>Promotor</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ route('filial.item.index') }}" class="nav-link">
+          <i class="nav-icon fa-solid fa-address-book"></i>
+            <p>Dados Aprovador</p>
+          </a>
+        </li>
+        {{--  <li class="nav-item">
+          <a href="{{ route('filial.itens.index') }}" class="nav-link">
+          <i class="fa-solid fa-boxes-packing"></i>
+            <p>Estoque</p>
+          </a>
+        </li>  --}}
+      </ul>
     </li>
     
     <li class="nav-item">
@@ -90,7 +117,7 @@
         <li class="nav-item">
           <a href="{{ route('filial.item.index') }}" class="nav-link">
           <i class="nav-icon fa-solid fa-boxes-packing"></i>
-            <p>Item</p>
+            <p>Equipamento</p>
           </a>
         </li>
         {{--  <li class="nav-item">
