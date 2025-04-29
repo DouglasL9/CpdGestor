@@ -15,10 +15,6 @@ GIT
 ```
 https://git-scm.com/
 ```
-MYSQL
-````
-https://www.mysql.com/
-````
 Compose
 ````
 https://getcomposer.org/
@@ -28,16 +24,21 @@ XAMPP
 https://www.apachefriends.org/pt_br/index.html
 ```
 caso não queira XAMPP instale:
+<br>
 PHP
 ````
 https://www.php.net/
+````
+MYSQL
+````
+https://www.mysql.com/
 ````
 
 ## 🚀 Passo a passo interativo
 
 Siga os passos abaixo para iniciar o projeto em seu ambiente local:
 
-1️⃣ **Clone o repositório**
+**Clone o repositório**
 
    Clique no botão "Clone" acima ou execute o seguinte comando no terminal:
 
@@ -52,11 +53,6 @@ Siga os passos abaixo para iniciar o projeto em seu ambiente local:
 
 <div align="center">
   Espero que este guia tenha sido útil e que você aproveite ao máximo o projeto utilizando Laravel, Docker e React. 🎉😄
-    
-## ✒️ Autores
-
-* **Douglas de Lima Pereira** - *Trabalho Inicial*
-Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
 </div>
 
 ## 🎁 Expressões de gratidão
@@ -65,3 +61,7 @@ Você também pode ver a lista de todos os [colaboradores](https://github.com/us
 * Convide alguém da equipe para uma cerveja 🍺;
 * Um agradecimento publicamente 🫂;
 * etc.
+
+## ✒️ Autores
+
+* **Douglas de Lima Pereira**
