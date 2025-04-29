@@ -1,24 +1,3 @@
-# CpdGestor
-
-CPD GESTOR sistema em desenvolvido para fins de automatizar as demandas cotidianas do trabalho de um Auxiliar de CPD e desenvolvimento pessoal como um desenvolvedor pondo em praticas as tecnologias estudadas. 
-
-## 🚀 Começando
-
-Passo-a-passo para instalação do projeto na sua máquina local.
-
-requerimentos para instalação na maquina
-
-GIT
-```
-https://git-scm.com/
-```
-XAMPP
-```
-https://www.apachefriends.org/pt_br/index.html
-```
-
-
-
 <h1 align="center">CPD GESTOR</h1>
 
 <div align="center">
@@ -36,19 +15,22 @@ GIT
 ```
 https://git-scm.com/
 ```
-XAMPP
-```
-https://www.apachefriends.org/pt_br/index.html
-
-PHP
-https://www.php.net/
-
 MYSQL
+````
 https://www.mysql.com/
-```
+````
 Compose
 ````
 https://getcomposer.org/
+````
+XAMPP
+```
+https://www.apachefriends.org/pt_br/index.html
+```
+caso não queira XAMPP instale:
+PHP
+````
+https://www.php.net/
 ````
 
 ## 🚀 Passo a passo interativo
