@@ -1,7 +1,7 @@
 <h1 align="center">CPD GESTOR</h1>
 
 <div align="center">
-  <strong>🐳 ⚙️ 🌐</strong>
+  <strong>⚙️ 🌐</strong>
 </div>
 <div align="center">
   CPD GESTOR sistema em desenvolvido para fins de automatizar as demandas cotidianas do trabalho de um Auxiliar de CPD e desenvolvimento pessoal como um desenvolvedor pondo em praticas as tecnologias estudadas. 
