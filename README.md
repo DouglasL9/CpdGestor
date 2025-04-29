@@ -35,40 +35,51 @@ E repita:
 Até finalizar
 ```
 
-Termine com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
-
-## 📦 Implantação
-
-Adicione notas adicionais sobre como implantar isso em um sistema ativo
-
 ## 🛠️ Construído com
 
-Mencione as ferramentas que você usou para criar seu projeto
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - O framework web usado
-* [Maven](https://maven.apache.org/) - Gerente de Dependência
-* [ROME](https://rometools.github.io/rome/) - Usada para gerar RSS
-
-## 🖇️ Colaborando
-
-Por favor, leia o [COLABORACAO.md](https://gist.github.com/usuario/linkParaInfoSobreContribuicoes) para obter detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de solicitação.
-
-## 📌 Versão
-
-Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/suas/tags/do/projeto). 
+* [Laravel]([http://www.dropwizard.io/1.0.2/docs/](https://laravel.com/)) - O framework web usado
 
 ## ✒️ Autores
 
-Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
-
-* **Um desenvolvedor** - *Trabalho Inicial* - [umdesenvolvedor](https://github.com/linkParaPerfil)
-* **Fulano De Tal** - *Documentação* - [fulanodetal](https://github.com/linkParaPerfil)
-
+* **Douglas de Lima Pereira** - *Trabalho Inicial*
 Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
 
-## 📄 Licença
+<h1 align="center">CPD GESTOR</h1>
 
-Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](https://github.com/usuario/projeto/licenca) para detalhes.
+<div align="center">
+  <strong>🐳 ⚙️ 🌐</strong>
+</div>
+<div align="center">
+  Um projeto incrível com Laravel, Docker e React!
+</div>
+
+## 🛠️ Pré-requisitos
+
+Antes de começar, certifique-se de que você tenha as seguintes ferramentas instaladas em sua máquina:
+
+- PHP
+- Compose 
+
+## 🚀 Passo a passo interativo
+
+Siga os passos abaixo para iniciar o projeto em seu ambiente local:
+
+1️⃣ **Clone o repositório**
+
+   Clique no botão "Clone" acima ou execute o seguinte comando no terminal:
+
+   ```bash
+   git clone https://github.com/DouglasL9/CpdGestor.git
+   ```
+   ou
+   ```
+   Clique no botão <> Code depois Download ZIP 
+   ```
+   Isso criará uma cópia local do repositório em seu ambiente.
+
+<div align="center">
+  Espero que este guia tenha sido útil e que você aproveite ao máximo o projeto utilizando Laravel, Docker e React. 🎉😄
+</div>
 
 ## 🎁 Expressões de gratidão
 
